@@ -1,0 +1,118 @@
+/* Colors */
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  /* Paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* Background, Headings, Buttons */
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* 
+- Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
+- Weights: 400 
+font-family: 'Lexend Deca';
+
+- Family: [Big Shoulders Display](https://fonts.google.com/specimen/Big+Shoulders+Display)
+- Weights: 700 
+font-family: 'Big Shoulders Display';
+*/
+
+body {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Lexend Deca', sans-serif, monospace;
+  background-color: var(--transparent-white);
+}
+
+.sectionWrapper {
+  width: 80%;
+  max-width: 350px;
+  /* take out and center */
+  margin: 5rem auto;
+}
+
+.sedans {
+  border-radius: 9px 9px 0 0;
+  background-color: var(--bright-orange);
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+
+.car {
+  padding: 3rem;
+  color: var(--transparent-white);
+  line-height: 2rem;
+}
+
+.car h1 {
+  padding: 2rem 0;
+  font-family: 'Big Shoulders Display';
+  font-size: 40px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.luxury {
+  border-radius: 0 0 9px 9px;
+  background-color: var(--very-dark-cyan);
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+button {
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 2rem 0 0;
+  background-color: var(--very-light-gray);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--very-dark-cyan);
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--very-dark-cyan);
+}
+
+@media (min-width: 1440px) {
+  
+  .sectionWrapper {
+    margin-top: 7rem;
+    max-width: 1000px;
+    /* take out and center */
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sedans {
+    border-radius: 9px 0 0 9px;
+  }
+
+  .luxury {
+    border-radius: 0 9px 9px 0;
+  }
+
+  .luxury p {
+    border: 1px solid var(--very-dark-cyan);
+  }
+
+}
